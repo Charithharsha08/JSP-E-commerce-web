@@ -1,0 +1,140 @@
+body{
+background-color: black !important;
+}
+.navbar-icons{
+   width: 20px;
+   height: 20px;
+}
+ .navbar-nav .nav-item {
+    margin: 0 30px; /* Adds horizontal spacing */
+  }
+#product-bar {
+    position: fixed;
+    top: -100%; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    transition: top 0.3s ease-in-out; /* Smooth transition */
+}
+
+#Laptop-video video{
+    width: 100%;
+    height: auto;
+}
+.offcanvas-end {
+    max-width: 300px;
+    box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.offcanvas-header, .offcanvas-body {
+    background-color: #343a40;
+    color: white;
+}
+#user-button .d-flex {
+    gap: 8px; /* Adjusts spacing between the icon and name */
+}
+
+#user-button i {
+    font-size: 1.2rem; /* Adjust icon size as needed */
+}
+
+#user-button p {
+    font-size: 1rem; /* Adjust text size to match the icon */
+    color: white; /* Ensure it matches the theme */
+    margin: 0; /* Remove default margins */
+}
+
+#user-button:hover {
+    background-color: rgb(255, 255, 255); /* Example hover effect */
+    color: rgba(0, 0, 0, 0.93); /* Adjust text/icon color if needed */
+}
+
+#user-button i, #user-button p {
+    color: inherit; /* Ensure both inherit the hover color */
+}
+
+.footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon {
+    color: #ccc;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-icon:hover {
+    color: #fff;
+}
+
+h5 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #444;
+}
+
+p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+
+
+/* Cart Sidebar */
+#cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 300px;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;
+}
+
+#cart-sidebar.show {
+    transform: translateX(0);
+}
+
+#cart-sidebar.hide {
+    transform: translateX(100%);
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 20px 10px;
+}
+
+
+@media (max-width: 768px) { /* Adjust as per your breakpoints */
+  #product-bar {
+    display: none; /* Hide product bar completely */
+  }
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .card img {
+    height: 150px;
+    object-fit: contain;
+}
+.card-body {
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Laptops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pre Owned</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Build My PC</a></li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-light me-2"><i class="fas fa-cart-shopping"></i></button>
+                    <button class="btn btn-outline-light"><i class="fas fa-user"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sidebar Filters -->
+            <div class="col-md-3">
+                <h5>Filters</h5>
+                <div class="mb-4">
+                    <h6>Price</h6>
+                    <input type="range" class="form-range" min="0" max="1600000">
+                </div>
+                <div class="mb-4">
+                    <h6>Availability</h6>
+                    <div>
+                        <input type="checkbox" id="inStock">
+                        <label for="inStock">In Stock</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="preOrder">
+                        <label for="preOrder">Pre Order</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Brand</h6>
+                    <div>
+                        <input type="checkbox" id="amd">
+                        <label for="amd">AMD</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="intel">
+                        <label for="intel">Intel</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Generation</h6>
+                    <div>
+                        <input type="checkbox" id="6thGen">
+                        <label for="6thGen">6th Gen</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="10thGen">
+                        <label for="10thGen">10th Gen</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Cores</h6>
+                    <div>
+                        <input type="checkbox" id="2cores">
+                        <label for="2cores">2 Cores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="4cores">
+                        <label for="4cores">4 Cores</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h6>Threads</h6>
+                    <div>
+                        <input type="checkbox" id="2threads">
+                        <label for="2threads">2 Threads</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="4threads">
+                        <label for="4threads">4 Threads</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="col-md-9">
+                <h4>Processors</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                    <!-- Product Card -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">AMD Ryzen 7 5700G</h5>
+                                <p class="card-text">Save Rs. 17,500</p>
+                                <p class="text-muted">Rs. 57,500</p>
+                                <button class="btn btn-primary w-100"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate this card for more products -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Intel i5 12400F</h5>
+                                <p class="card-text">Save Rs. 20,500</p>
+                                <p class="text-muted">Rs. 38,000</p>
+                                <button class="btn btn-primary w-100"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.navbar-icons{
+   width: 20px;
+   height: 20px;
+}
+ .navbar-nav .nav-item {
+    margin: 0 30px; /* Adds horizontal spacing */
+  }
+#product-bar {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 9999;
+  transition: top 0.4s ease; /* Fix the transition */
+}
+@media (max-width: 768px) { /* Adjust as per your breakpoints */
+  #product-bar {
+    display: none; /* Hide product bar completely */
+  }
+}
